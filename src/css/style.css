@@ -27,7 +27,7 @@ body {
 .conteudo {
     border-top: 5px solid #fff;
     margin-bottom: 38px;
-    padding: 0 11px;
+    padding: 0 10px;
 }
 
 .conteudo .conteudo-principal {
@@ -95,7 +95,7 @@ body {
 .bloco-titulo-aba {
     padding-top: 30px;
     border-bottom: 0.4px solid;
-    font-size: 30px;
+    font-size: 22px;
 }
 
 
