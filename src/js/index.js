@@ -49,7 +49,7 @@ function mostrarLista(){
 		nomeEl.appendChild(document.createTextNode(pessoa.nome));
 
 		var localEl = document.createElement('p');
-		localEl.appendChild(document.createTextNode('Esse objeto está localizado: ' + pessoa.sobrenome));
+		localEl.appendChild(document.createTextNode('O objeto está localizado: ' + pessoa.sobrenome));
 
 		var indice = pessoas.indexOf(pessoa);
 
