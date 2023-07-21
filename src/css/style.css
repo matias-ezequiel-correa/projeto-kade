@@ -1,6 +1,6 @@
 body {
-    /* background: rgb(86, 86, 86);
-    background: linear-gradient(0deg, rgba(86, 86, 86, 1) 0%, rgba(255, 255, 255, 1) 100%); */
+    background: rgb(86, 86, 86);
+    background: linear-gradient(0deg, rgba(86, 86, 86, 1) 0%, rgba(255, 255, 255, 1) 100%);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -27,6 +27,7 @@ body {
 .conteudo {
     border-top: 5px solid #fff;
     margin-bottom: 38px;
+    padding: 0 11px;
 }
 
 .conteudo .conteudo-principal {
@@ -34,19 +35,21 @@ body {
     align-items: center;
     justify-content: center;
     padding: 30px;
+    
 }
 
-.conteudo .conteudo-principal .banner-kade {
-    background: url(../imagens/Banner_template_Kadé.png) no-repeat;
+.conteudo .banner-kade {
+    /* background: url(../imagens/Banner_template_Kadé.png) no-repeat; */
     background-size: cover;
+    background-color: #000;
     margin: auto;
-    max-width: 350px;
+    max-width: 450px;
     max-height: 500px;
-    opacity: 1;
     position: absolute;
     z-index: -1;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 5px;
+    border-bottom: 0.4px solid #8791EE;
 }
 
 .conteudo-principal-escrito {
@@ -166,8 +169,8 @@ form input {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 15px;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    padding: 25px 0;
+    /* box-shadow: 0 0 100px rgba(0, 0, 0, 0.1); */
     border-radius: 8px;
     margin-top: 30px;
 }
@@ -175,17 +178,17 @@ form input {
 .content-form .form-box{
     border: 1px 1px #000000;
 }
-.conteudo form {
+.conteudo form,
+.conteudo .content-list {
     width: 100%;
     max-width: 700px;
     padding: 0 30px;
     margin: 20px auto;
-
+    border-radius: 10px;
     background: #f1f1f1;
 }
 
 .conteudo .content-list {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
