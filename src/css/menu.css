@@ -16,15 +16,8 @@
     font-size: 17px;
     padding: 10px 20px;
     text-shadow: 1px 1px 1px black;
+    color: #fff
 }
-
-.cabecalho ul .item1 {
-    color: #ffffff;
-}    
-
-.cabecalho ul .item2 {
-    color: #fdc52c;
-}    
 
 /* RESPONSIVE */
 
@@ -41,19 +34,19 @@
 }
 
 .cabecalho .hamburguer {
-    background-color: #fdc52c;
+    background-color: #fff;
     position: relative;
     display: block;
     width: 30px;
     height: 2px;
-    top: 50px;
+    top: 40px;
     left: 15px;
     transition: 0.5s ease-in-out;
 }
 
 .cabecalho .hamburguer:before,
 .cabecalho .hamburguer:after {
-    background-color: #fdc52c;
+    background-color: #fff;
     content: "";
     display: block;
     width: 100%;
@@ -89,7 +82,7 @@
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1190px) {
     .cabecalho .menu {
         display: block;
     }
@@ -113,7 +106,7 @@
     .cabecalho nav ul {
         width: 200px;
         padding: 20px;
-        background-color: #181733;
+        background-color: #8791EE;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
     }
@@ -129,9 +122,8 @@
     }
 
     .cabecalho nav ul .item-menu:hover {
-        color: #fdc52c;
-        background: rgb(23, 66, 131);
-        background: linear-gradient(0deg, rgba(23, 66, 131, 1) 10%, rgba(202, 19, 46, 1) 90%);
+        color: #fff;
+        background: #6673ef;
         border-radius: 20px;
         box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);   
     }
