@@ -1,41 +1,37 @@
-var appForm = document.getElementById('app-form');
-var listaPessoas = document.getElementById('listaPessoas');
+var appForm = document.getElementById('app-form'); //
+var listaObjetos = document.getElementById('listaObjetos'); //
 
-var pessoas = [];
+var objetos = [];
 
-appForm.onsubmit = addPessoa;
-btnOrdenar.onclick = ordenarLista;
+appForm.onsubmit = addObjeto;
 
-function addPessoa(e){
+function addObjeto(e){
 	e.preventDefault();
 
-	console.log(e);
+	var nome = e.target.objetoNome.value;
+	var local = e.target.objetoLocal.value;
 
-	var nome = e.target.pessoaNome.value;
-	var sobrenome = e.target.pessoaSobrenome.value;
+	var objeto = { nome, local };
 
-	var pessoa = { nome, sobrenome };
-
-	var validation = validarCampos(pessoa);
+	var validation = validarCampos(objeto);
 	if(!validation.status){
 		alert(validation.error);
 		return;
 	}
 
-	pessoas.push(pessoa);
+	objetos.push(objeto);
 	appForm.reset();
 	mostrarLista();
-	console.log(pessoas);
 }
 
-function validarCampos(pessoa){
+function validarCampos(objeto){
 	var validation = { status: true, error: '', };
 
-	if(pessoa.nome.length === 0){
+	if(objeto.nome.length === 0){
 		validation.status = false;
 		validation.error = 'Preencha o campo do Nome do Objeto';
 	}
-	else if(pessoa.sobrenome.length === 0){
+	else if(objeto.local.length === 0){
 		validation.status = false;
 		validation.error = 'Preencha o campo do Local Situado';
 	}
@@ -43,27 +39,27 @@ function validarCampos(pessoa){
 }
 
 function mostrarLista(){
-	listaPessoas.innerHTML = '';
-	for(pessoa of pessoas){
+	listaObjetos.innerHTML = '';
+	for(objeto of objetos){
 		var nomeEl = document.createElement('strong');
-		nomeEl.appendChild(document.createTextNode(pessoa.nome));
+		nomeEl.appendChild(document.createTextNode(objeto.nome));
 
 		var localEl = document.createElement('p');
-		localEl.appendChild(document.createTextNode('O objeto está localizado: ' + pessoa.sobrenome));
+		localEl.appendChild(document.createTextNode('O objeto está localizado: ' + objeto.local));
 
-		var indice = pessoas.indexOf(pessoa);
+		var indice = objetos.indexOf(objeto);
 
 		var removerEl = document.createElement('a');
 		removerEl.setAttribute('href', '#');
 		var removerText = document.createTextNode('Remover');
 		removerEl.appendChild(removerText);
-		removerEl.setAttribute('onclick', 'removerPessoa(' + indice + ')');
+		removerEl.setAttribute('onclick', 'removerObjeto(' + indice + ')');
 
 		var alterarEl = document.createElement('a');
 		alterarEl.setAttribute('href', '#');
 		var alterarText = document.createTextNode('Alterar');
 		alterarEl.appendChild(alterarText);
-		alterarEl.setAttribute('onclick', 'alterarPessoa(' + indice + ')');
+		alterarEl.setAttribute('onclick', 'alterarObjeto(' + indice + ')');
 
 		var itemEl = document.createElement('li');
 		itemEl.appendChild(nomeEl);
@@ -71,46 +67,46 @@ function mostrarLista(){
 		itemEl.appendChild(alterarEl);
 		itemEl.appendChild(removerEl);
 
-		listaPessoas.appendChild(itemEl);
+		listaObjetos.appendChild(itemEl);
 	}
 }
 
-function removerPessoa(indice){
-	pessoas.splice(indice, 1);
+function removerObjeto(indice){
+	objetos.splice(indice, 1);
 	mostrarLista();
 }
 
-function alterarPessoa(indice){
+function alterarObjeto(indice){
 	var btnCadastrar = document.getElementById('btnCadastrar');
 	var btnEditar = document.getElementById('btnEditar');
-	var input_nome = document.getElementById('pessoaNome');
-	var input_sobrenome = document.getElementById('pessoaSobrenome');
+	var input_nome = document.getElementById('objetoNome');
+	var input_local = document.getElementById('objetoLocal');
 
 	btnCadastrar.setAttribute('style', 'display:none');
 	btnEditar.setAttribute('style', 'display:');
 
-	input_nome.value = pessoas[indice].nome;
-	input_sobrenome.value = pessoas[indice].sobrenome;
+	input_nome.value = objetos[indice].nome;
+	input_local.value = objetos[indice].local;
 
 	btnEditar.onclick = function(){
-		var pessoaAlterada = {
+		var objetoAlterada = {
 			nome: input_nome.value,
-			sobrenome: input_sobrenome.value,
+			local: input_local.value,
 		};
 
-		var validation = validarCampos(pessoaAlterada);
+		var validation = validarCampos(objetoAlterada);
 		if(!validation.status){
 			alert(validation.error);
 			return;
 		}
 
 		input_nome.value = '';
-		input_sobrenome.value = '';
+		input_local.value = '';
 
 		btnCadastrar.setAttribute('style', 'display:');
 		btnEditar.setAttribute('style', 'display:none');
 
-		pessoas[indice] = pessoaAlterada;
+		objetos[indice] = objetoAlterada;
 		mostrarLista();
 	};
 }
