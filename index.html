@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="favicon" href="./src/imagens/favicon-32x32.png">
-    <title>Projeto Kadé? | By Matias Correa</title>
+    <link rel="icon" type="favicon" href="./src/imagens/favicon.ico">
+    <title>Projeto Kadê? | By Matias Correa</title>
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
@@ -14,16 +14,14 @@
     <link rel="stylesheet" href="src/css/scrollbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;500;800&family=Rajdhani:wght@500;600;700&display=swap?family=Ubuntu:wght@300;400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;500;800&family=Rajdhani:wght@500;600;700&display=swap?family=Ubuntu:wght@300;400;500&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="./src/css/font-awesome.css">
 </head>
 
 <body>
     <header class="cabecalho">
         <a href="#">
-            <img src="./src/imagens/logo-kade-recortada.png" alt="logo-kade" class="logo">
+            <img src="./src/imagens/kade-logo-1.png" alt="logo-kade" class="logo">
         </a>
         <nav>
             <input type="checkbox" id="menu-hamburguer" />
@@ -51,10 +49,10 @@
     </header>
     <main class="conteudo">
         <div class="conteudo-principal" id="sobre-nos">
-                <img src="./src/imagens/Banner_template_Kadé_personalizado.png" alt="Banner-Kadé" class="banner-kade">
+                <img src="./src/imagens/banner_template_kade-pers.png" alt="Banner-Kadê" class="banner-kade">
             <div class="conteudo-principal-escrito">
                 <h1 class="titulo-principal">Bem-vindo(a)</h1>
-                <h2 class="subtitulo-principal">ao aplicativo "Kadé?"</h2>
+                <h2 class="subtitulo-principal">ao aplicativo "Kadê?"</h2>
                 <button class="botao-sobre">Sobre nós</button>
             </div>
         </div>
@@ -63,13 +61,13 @@
                 <div class="input-group">
                     <h1 class="bloco-titulo-aba">CRIAR NOVO REGISTRO</h1>
                     <p class="texto-inserir">INSERIR NOME DO OBJETO: *</p>
-                    <input id="pessoaNome" placeholder="Digite nome do objeto..." />
+                    <input id="objetoNome" placeholder="Digite nome do objeto..." />
                     <p class="texto-explicativo">Coloque o nome do objeto.</p>
                     <p class="campo-obrigatorio">campo obrigatório</p>
 
 
                     <p class="texto-inserir">INSERIR LOCAL SITUADO: *</p>
-                    <input id="pessoaSobrenome" placeholder="Digite o local do objeto..." />
+                    <input id="objetoLocal" placeholder="Digite o local do objeto..." />
                     <p class="texto-explicativo">Especifique o lugar onde o objeto se encontra.</p>
                     <p class="campo-obrigatorio">campo obrigatório</p>
                 </div>
@@ -77,24 +75,18 @@
                     <button class="btn-app" id="btnCadastrar" type="submit">Adicionar</button>
                     <button class="btn-app" id="btnEditar" type="button" style="display: none;">Editar</button>
                 </div>
-            </form>
+            
         </div>
-        <!-- <div class="content-actions">
-			<div class="content-actions-buttons">
-				<button class="btn-app" id="btnExemplo">Gerar Lista Exemplo</button>
-				<button class="btn-app" id="btnOrdenar">Ordenar</button>
-			</div>
-		</div> -->
         <div class="content-list">
             <div class="content-list-container">
                 <h1 class="bloco-titulo-aba">OBJETOS REGISTRADOS +</h1>
-                <ul id="listaPessoas"></ul>
+                <ul id="listaObjetos"></ul>
             </div>
         </div>
     </main>
     <footer class="footer" id="contact">
         <a href="#">
-            <img src="./src/imagens/logo-kade.png" alt="logo-kade" class="logo-footer">
+            <img src="./src/imagens/kade-canva-footer.png" alt="logo-kade" class="logo-footer">
         </a>
 
         <nav>
@@ -116,7 +108,7 @@
                 <i class="fab fa-github"></i>
             </a>
             <a href="https://matias-ezequiel-correa.github.io/Portfolio1-MatiasCorrea/" target="_blank">
-                <i class="fa-solid fa-folder-open"></i>
+                <i class="fas fa-folder-open"></i>
             </a>
         </div>
     </footer> 
