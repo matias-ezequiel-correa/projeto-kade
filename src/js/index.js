@@ -77,12 +77,12 @@ function removerObjeto(indice){
 }
 
 function alterarObjeto(indice){
-	var btnCadastrar = document.getElementById('btnCadastrar');
+	var btnAdicionar = document.getElementById('btnAdicionar');
 	var btnEditar = document.getElementById('btnEditar');
 	var input_nome = document.getElementById('objetoNome');
 	var input_local = document.getElementById('objetoLocal');
 
-	btnCadastrar.setAttribute('style', 'display:none');
+	btnAdicionar.setAttribute('style', 'display:none');
 	btnEditar.setAttribute('style', 'display:');
 
 	input_nome.value = objetos[indice].nome;
@@ -103,10 +103,11 @@ function alterarObjeto(indice){
 		input_nome.value = '';
 		input_local.value = '';
 
-		btnCadastrar.setAttribute('style', 'display:');
+		btnAdicionar.setAttribute('style', 'display:');
 		btnEditar.setAttribute('style', 'display:none');
 
 		objetos[indice] = objetoAlterada;
 		mostrarLista();
 	};
 }
+
