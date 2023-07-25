@@ -51,10 +51,7 @@ function mostrarLista(){
 
 		var removerEl = document.createElement('a');
 		removerEl.setAttribute('href', '#');
-		var removerText = document.createElement("i");
-		removerText.classList.add("fas");
-		removerText.classList.add("fa-trash-alt");
-		removerText.setAttribute("title", "Remover")
+		var removerText = document.createTextNode('Remover');
 		removerEl.appendChild(removerText);
 		removerEl.setAttribute('onclick', 'removerObjeto(' + indice + ')');
 
@@ -113,3 +110,4 @@ function alterarObjeto(indice){
 		mostrarLista();
 	};
 }
+
