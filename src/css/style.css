@@ -196,6 +196,7 @@ form input {
     padding-bottom: 100px;
 }
 
+
 .conteudo .content-list .content-list-container {
     width: 100%;
     max-width: 700px;
@@ -206,7 +207,9 @@ form input {
     display: grid;
     grid-gap: 24px;
     list-style: none;
+    transition: 0.3s ease-in-out;
 }
+
 
 .conteudo .content-list ul li {
     background: #fff;
@@ -238,7 +241,7 @@ form input {
 
 .conteudo .content-list ul li a {
     height: 30px;
-    padding: 5px;
+    padding: 5px 10px;
     background: rgb(12, 196, 122);
     border: 0;
     border-radius: 2px;
@@ -254,7 +257,12 @@ form input {
     filter: brightness(90%)
 }
 
-
+#listaObjetos li:hover{
+    background-color: #f1f5f5;
+    transition: .4s;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
 
 /*footer*/
 
