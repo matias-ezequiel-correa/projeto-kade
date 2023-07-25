@@ -14,13 +14,15 @@
     <link rel="stylesheet" href="src/css/scrollbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;500;800&family=Rajdhani:wght@500;600;700&display=swap?family=Ubuntu:wght@300;400;500&display=swap"rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;500;800&family=Rajdhani:wght@500;600;700&display=swap?family=Ubuntu:wght@300;400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./src/css/font-awesome.css">
 </head>
 
 <body>
     <header class="cabecalho">
-        <a href="#">
+        <a href="index.html">
             <img src="./src/imagens/kade-logo-1.png" alt="Logo de Kadê" class="logo">
         </a>
         <nav>
@@ -36,10 +38,10 @@
                     <a href="sobre-nos.html" class="item-menu">SOBRE NÓS</a>
                 </li>
                 <li>
-                    <a href="novo-registro.html" class="item-menu">CRIAR NOVO REGISTRO</a>
+                    <a href="#app-form" class="item-menu">CRIAR NOVO REGISTRO</a>
                 </li>
                 <li>
-                    <a href="#" class="item-menu">OBJETOS REGISTRADOS</a>
+                    <a href="#listaObjetos" class="item-menu">OBJETOS REGISTRADOS</a>
                 </li>
                 <li>
                     <a href="#contact" class="item-menu">CONTATO</a>
@@ -49,7 +51,7 @@
     </header>
     <main class="conteudo">
         <div class="conteudo-principal" id="sobre-nos">
-                <img src="./src/imagens/banner_template_kade-pers.png" alt="Banner-Kadê" class="banner-kade">
+            <img src="./src/imagens/banner_template_kade-pers.png" alt="Banner-Kadê" class="banner-kade">
             <div class="conteudo-principal-escrito">
                 <h1 class="titulo-principal">Bem-vindo(a)</h1>
                 <h2 class="subtitulo-principal">ao aplicativo "Kadê?"</h2>
@@ -63,19 +65,16 @@
                     <p class="texto-inserir">INSERIR NOME DO OBJETO: *</p>
                     <input id="objetoNome" placeholder="Digite nome do objeto..." />
                     <p class="texto-explicativo">Coloque o nome do objeto.</p>
-                    <p class="campo-obrigatorio">campo obrigatório</p>
-
 
                     <p class="texto-inserir">INSERIR LOCAL SITUADO: *</p>
                     <input id="objetoLocal" placeholder="Digite o local do objeto..." />
                     <p class="texto-explicativo">Especifique o lugar onde o objeto se encontra.</p>
-                    <p class="campo-obrigatorio">campo obrigatório</p>
                 </div>
                 <div class="input-group">
                     <button class="btn-app" id="btnAdicionar" type="submit">Adicionar</button>
                     <button class="btn-app" id="btnEditar" type="button" style="display: none;">Editar</button>
                 </div>
-            
+
         </div>
         <div class="content-list">
             <div class="content-list-container">
@@ -91,7 +90,7 @@
 
         <nav>
             <ul>
-                <li><a href="#sobre-nos">Sobre nós</a></li>
+                <li><a href="sobre-nos.html">Sobre nós</a></li>
                 <!-- <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Projects</a></li> -->
             </ul>
@@ -111,7 +110,7 @@
                 <i class="fas fa-folder-open"></i>
             </a>
         </div>
-    </footer> 
+    </footer>
     <script src="./src/js/index.js"></script>
 </body>
 
