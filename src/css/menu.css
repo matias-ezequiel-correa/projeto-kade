@@ -19,6 +19,23 @@
     color: #fff
 }
 
+.cabecalho .btn-voltar{
+    font-size: 17px;
+    padding: 33px 20px;
+    text-shadow: 1px 1px 1px black;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+}
+
+.cabecalho .btn-voltar:hover {
+    color: #ffe8e8;
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
 /* RESPONSIVE */
 
 .cabecalho .menu {
