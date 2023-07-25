@@ -45,13 +45,16 @@ function mostrarLista(){
 		nomeEl.appendChild(document.createTextNode(objeto.nome));
 
 		var localEl = document.createElement('p');
-		localEl.appendChild(document.createTextNode('O objeto está localizado: ' + objeto.local));
+		localEl.appendChild(document.createTextNode('Está localizado: ' + objeto.local));
 
 		var indice = objetos.indexOf(objeto);
 
 		var removerEl = document.createElement('a');
 		removerEl.setAttribute('href', '#');
-		var removerText = document.createTextNode('Remover');
+		var removerText = document.createElement("i");
+		removerText.classList.add("fas");
+		removerText.classList.add("fa-trash-alt");
+		removerText.setAttribute("title", "Remover")
 		removerEl.appendChild(removerText);
 		removerEl.setAttribute('onclick', 'removerObjeto(' + indice + ')');
 
@@ -110,4 +113,3 @@ function alterarObjeto(indice){
 		mostrarLista();
 	};
 }
-
