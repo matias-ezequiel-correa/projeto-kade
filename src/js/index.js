@@ -45,7 +45,7 @@ function mostrarLista(){
 		nomeEl.appendChild(document.createTextNode(objeto.nome));
 
 		var localEl = document.createElement('p');
-		localEl.appendChild(document.createTextNode('Está localizado: ' + objeto.local));
+		localEl.appendChild(document.createTextNode('Localizado: ' + objeto.local));
 
 		var indice = objetos.indexOf(objeto);
 
