@@ -8,7 +8,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    /* padding: 0 50px; */
     box-shadow: 1px 5px 5px #000000;
     background-color: #0899DC;
 }
@@ -17,6 +17,7 @@ body {
     height: 85px;
     text-shadow: 1px 1px 1px black;
     transition: 0.2s ease-in-out;
+    margin: 0 20px;
 }
 
 .cabecalho .logo:hover {
@@ -39,7 +40,6 @@ body {
 }
 
 .conteudo .banner-kade {
-    /* background: url(../imagens/Banner_template_Kadé.png) no-repeat; */
     background-size: cover;
     background-color: #000;
     margin: auto;
@@ -125,17 +125,6 @@ form input {
     margin: 0 5px;
 }
 
-.campo-obrigatorio {
-    display: none;
-}
-
-.campo-obrigatorio.ativo {
-    font-size: 1rem;
-    color: #F52E2E;
-    font-weight: 400;
-    display: block;
-}
-
 .btn-app {
     width: 50%;
     height: 60px;
@@ -171,7 +160,6 @@ form input {
     align-items: center;
     width: 100%;
     padding: 25px 0;
-    /* box-shadow: 0 0 100px rgba(0, 0, 0, 0.1); */
     border-radius: 8px;
     margin-top: 30px;
 }
