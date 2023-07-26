@@ -8,8 +8,8 @@
   Este é um projeto pessoal <a href="https://matias-ezequiel-correa.github.io/projeto-kade/" target="_blank">Projeto Kadê? | By Matías Correa</a> para um trabalho da faculdade, que tem a função de registrar as localizações de objetos para deficientes visuais, atualmente hospedado no <a href="https://github.com/matias-ezequiel-correa">GitHub-Pages</a>.
 </p>
 
-## Demo Video <br>
-[<img align-item="center" width="250" src="./src/design/projeto-kade-video.gif" alt="gif do projeto kadê">](https://matias-ezequiel-correa.github.io/projeto-kade/)
+## Demo Video: <br>
+[<p align="center"><img width="250" src="./src/design/projeto-kade-video.gif" alt="gif do projeto kadê">](https://matias-ezequiel-correa.github.io/projeto-kade/)</p>
 
 ### 🔗 Link do Projeto: <a href="https://matias-ezequiel-correa.github.io/projeto-kade/" target="_blank">matias-ezequiel-correa.github.io/projeto-kade/</a>
 
