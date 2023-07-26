@@ -9,11 +9,16 @@
 tem a função de registrar as localizações de objetos para deficientes visuais, atualmente hospedado no <a href="https://github.com/matias-ezequiel-correa">GitHub-Pages</a>.
 </p>
 
-![demo]()
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+## Demo Video <br>
+[<img align-item="center" width="250" src="./src/design/projeto-kade-video.gif" alt="gif do projeto kadê">](https://matias-ezequiel-correa.github.io/projeto-kade/)
 
-### 🔗 Link do Portfólio: <a href="https://matias-ezequiel-correa.github.io/Portfolio1-MatiasCorrea/" target="_blank">matias-ezequiel-correa.github.io/Portfolio1-MatiasCorrea/</a>
+### 🔗 Link do Projeto: <a href="https://matias-ezequiel-correa.github.io/projeto-kade/" target="_blank">matias-ezequiel-correa.github.io/projeto-kade/</a>
+
+## Tecnologias utilizadas:
+
+ * HTML
+ * CSS
+ * JAVASCRIPT
 
  ### Pra entrar em contato, veja as redes abaixo!
  
