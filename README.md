@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo-do-Kadê " src="https://i.ibb.co/0KpPy8C/kade-logo-1.png" width="150" />
+  <img alt="Logo-do-Kadê" src="https://i.ibb.co/0KpPy8C/kade-logo-1.png" width="150" />
 </div>
 <h1 align="center">
   Matías Ezequiel Correa - Projeto "Kadê?"
