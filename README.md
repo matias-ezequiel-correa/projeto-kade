@@ -5,7 +5,7 @@
   Matías Ezequiel Correa - Projeto "Kadê?"
 </h1>
 <p align="center">
-  Este é um projeto pessoal <a href="https://matias-ezequiel-correa.github.io/projeto-kade/" target="_blank">Projeto Kadê? | By Matías Correa</a> para um trabalho da faculdade, que tem a função de registrar as localizações de objetos para deficientes visuais, atualmente hospedado no <a href="https://github.com/matias-ezequiel-correa">GitHub-Pages</a>.
+  Este é um projeto pessoal <a href="https://matias-ezequiel-correa.github.io/projeto-kade/" target="_blank">Projeto Kadê? | By Matías Correa</a> para um trabalho da faculdade, que tem a função de registrar as localizações de objetos para deficientes visuais (PCDs), atualmente hospedado no <a href="https://github.com/matias-ezequiel-correa">GitHub-Pages</a>.
 </p>
 
 ## Demo Video: <br>
